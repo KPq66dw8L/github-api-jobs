@@ -1,0 +1,192 @@
+/* Primary colors */
+$violet : #5964E0;
+$lightViolet : #939BF4;
+$veryDarkBlue : #19202d;
+$midnight : #121721;
+/* Secondary colors */
+$white : #ffffff;
+$lightGrey : #f4f6f8;
+$grey : #9DaeC2;
+$darkGrey : #6E8098;
+
+/* FONT definition */
+@font-face {
+    font-family: Kumbh-Sans;
+    src: url('../fonts/KumbhSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Kumbh-Sans;
+    src: url('../fonts/KumbhSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Kumbh-Sans;
+    src: url('../fonts/KumbhSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: bold;
+}
+
+body {
+    background-color: black;
+    font-family: Kumbh-Sans , sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    h1 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    h2 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    h4 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+/* Buttons */
+.divBtn {
+    width: 140px;
+    height: 45px;
+}
+
+.btn {
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.btn-1 {
+    background-color: $violet;
+    color: $white;
+    &:hover {
+        background-color: $lightViolet;
+    }
+}
+.btn-2 {
+    background-color: $lightGrey;
+    color: $violet;
+    &:hover {
+        background-color: #b6bcf5;
+    }
+}
+.btn-dark {
+    background-color: $veryDarkBlue;
+    color: $white;
+    &:hover {
+        background-color: $darkGrey;
+    }
+}
+/* Toggle switch */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    input { /* Hide default HTML checkbox */
+        opacity: 0;
+        width: 0;
+        height: 0;
+        &:checked + .slider:before {
+            -webkit-transform: translateX(40px);
+            -ms-transform: translateX(40px);
+            transform: translateX(40px);
+        }
+    }
+}
+  /* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    &:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: 5.5px;
+        bottom: 5px;
+        background-color: $violet;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    &:hover::before {
+        background-color: $lightViolet;
+    }
+    &.round {
+        border-radius: 34px;
+        &:before {
+            border-radius: 50%;
+        }
+    }
+}
+
+/* Search bar */
+.search-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $white;
+    width: 350px;
+    height: 75px;
+    border-radius: 10px;
+    input[type=text] {
+        font-size: 17px;
+        border: none;
+        outline: none;
+    }
+    button {
+        margin: 0 5px 0 30px;
+        background: $white;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+}
+.search-container-black {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $veryDarkBlue;
+    width: 350px;
+    height: 75px;
+    border-radius: 10px;
+    input[type=text] {
+        font-size: 17px;
+        border: none;
+        outline: none;
+        background-color: $veryDarkBlue;
+        color: $white;
+    }
+    button {
+        margin: 0 5px 0 30px;
+        background: $veryDarkBlue;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+}
