@@ -22,10 +22,18 @@
   font-style: bold;
 }
 
+html {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: Kumbh-Sans , sans-serif;
   font-size: 16px;
   line-height: 26px;
+  margin: 0;
+  padding: 0;
+  background-color: #F2F2F2;
 }
 
 body h1 {
@@ -46,6 +54,11 @@ body h3 {
 body h4 {
   font-size: 14px;
   line-height: 18px;
+}
+
+.all {
+  padding-left: 12vw;
+  padding-right: 12vw;
 }
 
 /* Buttons */
@@ -294,5 +307,42 @@ body h4 {
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+/* Le reste */
+.pattern-header {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+}
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header h1 {
+  color: #ffffff;
+}
+
+#header .darkSwitch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 120px;
 }
 /*# sourceMappingURL=main.css.map */
