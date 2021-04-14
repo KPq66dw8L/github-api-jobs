@@ -353,7 +353,7 @@ body h4 {
 
 /* Le reste */
 .pattern-header {
-  position: fixed;
+  position: absolute;
   z-index: -1;
   top: 0;
   width: 1536px;
@@ -369,7 +369,8 @@ body h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
+  /* background-image: url(../assets/desktop/bg-pattern-header.svg); */
 }
 
 #header h1 {
@@ -387,5 +388,51 @@ body h4 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 120px;
+}
+
+.results {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+  margin-top: 100px;
+  -webkit-column-gap: 3vw;
+          column-gap: 3vw;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.element {
+  background-color: #ffffff;
+  /* height: 250px;
+    width: 350px; */
+  padding: 30px 30px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.element * {
+  margin: 8px;
+}
+
+.element p {
+  color: #9DaeC2;
+}
+
+.element h4 {
+  color: #5964E0;
 }
 /*# sourceMappingURL=main.css.map */

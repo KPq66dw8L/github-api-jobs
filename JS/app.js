@@ -14,10 +14,16 @@ $('a:first-child').click( function(e) {
   };
   console.log(settings.url);
   $.ajax(settings).done(function (response) {
-    $("#test").html(response);
-    console.log(response);
+    /* $("#test").html(response); */
+    console.log(response.length);
   });
 
   return false; 
 });
+
+/* set le nombre de row à taille array divisé par 3, et recopier la div element le nombre de taille array en modifiant les infos */
+
+/* document.getElementById("results").style.gridTemplateRows = "repeat(5, 1fr)"; */
+
+/* https://stackoverflow.com/questions/30267973/how-to-repeat-div-element-n-times-in-html */
 
