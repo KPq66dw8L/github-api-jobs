@@ -1,12 +1,23 @@
+/* Obternir data du Form; -> pas besoin ici*/
+/* $("#research").serialize(); */
 
+$('a:first-child').click( function(e) {
+  e.preventDefault(); 
+  let jobName = encodeURIComponent(document.getElementById('job-name').value);
+  let locationName = encodeURIComponent(document.getElementById('location').value);
+  console.log(encodeURIComponent(jobName), encodeURIComponent(locationName));
 
-var settings = {
-  "url": "https://peaceful-ravine-72730.herokuapp.com/https://jobs.github.com/positions.json?description=python&full_time=true",
-  "method": "GET",
-  "timeout": 0,
-};
+  var settings = {
+    "url": "https://cors.bridged.cc/https://jobs.github.com/positions.json?description="+jobName+"&location="+locationName,
+    "method": "GET",
+    "timeout": 0,
+  };
+  console.log(settings.url);
+  $.ajax(settings).done(function (response) {
+    $("#test").html(response);
+    console.log(response);
+  });
 
-$.ajax(settings).done(function (response) {
-  $("#test").html(response[0].company);
-  console.log(response[0].company);
+  return false; 
 });
+

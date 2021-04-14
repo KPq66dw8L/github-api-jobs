@@ -134,7 +134,7 @@ body h4 {
   transform: translateX(40px);
 }
 
-/* The slider */
+/* Toggle switch: The slider */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -176,34 +176,17 @@ body h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #ffffff;
-  width: 350px;
+  width: 100%;
   height: 75px;
   border-radius: 10px;
+  padding-left: 15px;
 }
 
-.search-container input[type=text] {
-  font-size: 17px;
-  border: none;
-  outline: none;
-}
-
-.search-container button {
-  margin: 0 5px 0 30px;
-  background: #ffffff;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-  outline: none;
-}
-
-.search-container-black {
+.search-container .search-job {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,44 +196,103 @@ body h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #19202d;
-  width: 350px;
-  height: 75px;
-  border-radius: 10px;
 }
 
-.search-container-black input[type=text] {
+.search-container .search-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  border-left: solid 2px #9DaeC2;
+  padding-left: 1vw;
+}
+
+.search-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.search-container input[type=text] {
   font-size: 17px;
   border: none;
   outline: none;
-  background-color: #19202d;
-  color: #ffffff;
+  width: 11vw;
 }
 
-.search-container-black button {
-  margin: 0 5px 0 30px;
-  background: #19202d;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-  outline: none;
+.search-container img {
+  margin: 0 10px 0 0;
 }
 
+/* .search-container-black {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $veryDarkBlue;
+    width: 350px;
+    height: 75px;
+    border-radius: 10px;
+    input[type=text] {
+        font-size: 17px;
+        border: none;
+        outline: none;
+        background-color: $veryDarkBlue;
+        color: $white;
+    }
+    button {
+        margin: 0 5px 0 30px;
+        background: $veryDarkBlue;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+} */
 /* Checkbox */
-/* The container */
+.search-checkbox {
+  margin-right: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  border-left: solid 2px #9DaeC2;
+  padding-left: 1vw;
+}
+
 .container {
   display: block;
   position: relative;
   padding-left: 35px;
-  margin-bottom: 12px;
   cursor: pointer;
-  font-size: 17px;
+  margin-right: 1vw;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-weight: 700;
 }
 
 .container input {
@@ -311,10 +353,10 @@ body h4 {
 
 /* Le reste */
 .pattern-header {
-  position: absolute;
+  position: fixed;
   z-index: -1;
   top: 0;
-  width: 100%;
+  width: 1536px;
 }
 
 #header {
@@ -327,6 +369,7 @@ body h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 35px;
 }
 
 #header h1 {
