@@ -16,14 +16,17 @@ $('a:first-child').click( function(e) {
   $.ajax(settings).done(function (response) {
     /* $("#test").html(response); */
     console.log(response.length);
+
+    /* Setting the grid size depending on the number of results */
+    document.getElementById("results").style.gridTemplateRows = "repeat("+(Math.floor(response.length / 3)+1)+", 1fr)";
+
+    $(document).ready(function(){
+      for(var i = 0; i< response.length; i++)
+        $("#results").append("<div class='element'><p>Xh ago . "+response[i].type+"</p><h2>"+response[i].title+"</h2><p>"+response[i].company+"</p><h4>Location</h4></div>");  
+   });
   });
+
+  
 
   return false; 
 });
-
-/* set le nombre de row à taille array divisé par 3, et recopier la div element le nombre de taille array en modifiant les infos */
-
-/* document.getElementById("results").style.gridTemplateRows = "repeat(5, 1fr)"; */
-
-/* https://stackoverflow.com/questions/30267973/how-to-repeat-div-element-n-times-in-html */
-

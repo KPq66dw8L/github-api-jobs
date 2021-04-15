@@ -34,6 +34,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #F2F2F2;
+  overflow-x: hidden;
 }
 
 body h1 {
@@ -400,6 +401,7 @@ body h4 {
   margin-top: 100px;
   -webkit-column-gap: 3vw;
           column-gap: 3vw;
+  row-gap: 3vw;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -422,6 +424,7 @@ body h4 {
           flex-direction: column;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .element * {
