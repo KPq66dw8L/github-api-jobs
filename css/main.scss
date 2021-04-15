@@ -60,6 +60,9 @@ body {
         font-size: 14px;
         line-height: 18px;
     }
+    a {
+        text-decoration: none;
+    }
 }
 
 .all {
@@ -315,7 +318,7 @@ body {
 .results {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    /* grid-template-rows: repeat(1, 1fr); */
     margin-top: 100px;
     column-gap: 3vw;
     row-gap: 3vw;
@@ -326,8 +329,6 @@ body {
 
 .element {
     background-color: $white;
-    /* height: 250px;
-    width: 350px; */
     padding: 30px 30px;
     border-radius: 5px;
     display: flex;

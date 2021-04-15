@@ -57,6 +57,10 @@ body h4 {
   line-height: 18px;
 }
 
+body a {
+  text-decoration: none;
+}
+
 .all {
   padding-left: 12vw;
   padding-right: 12vw;
@@ -396,8 +400,7 @@ body h4 {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[1];
-      grid-template-rows: repeat(1, 1fr);
+  /* grid-template-rows: repeat(1, 1fr); */
   margin-top: 100px;
   -webkit-column-gap: 3vw;
           column-gap: 3vw;
@@ -408,8 +411,6 @@ body h4 {
 
 .element {
   background-color: #ffffff;
-  /* height: 250px;
-    width: 350px; */
   padding: 30px 30px;
   border-radius: 5px;
   display: -webkit-box;
