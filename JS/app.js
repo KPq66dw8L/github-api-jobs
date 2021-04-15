@@ -19,12 +19,9 @@ $('a:first-child').click( function(e) {
     /* Fill result's elements */
     $(document).ready(function(){
       for(var i = 0; i< response.length; i++)
-        $("#results").append("<div class='element'><a id='element' href='description.html' style='color:black;'><p>Xh ago . "+response[i].type+"</p><h2>"+response[i].title+"</h2><p>"+response[i].company+"</p><h4>Location</h4></a></div>"); 
-        
-        console.log(response[0].created_at); 
+        $("#results").append("<div class='element' id='"+response[i].id+"'><a  href='description.html?id="+response[i].id+"' style='color:black;'><p>Xh ago . "+response[i].type+"</p><h2>"+response[i].title+"</h2><p>"+response[i].company+"</p><h4>Location</h4></a></div>");    
    });
    
-
   });
 
   return false; 
