@@ -439,4 +439,76 @@ body a {
 .element h4 {
   color: #5964E0;
 }
+
+/* Description Page */
+.descriAll {
+  padding: 0 15vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 150px 1fr 300px;
+      grid-template-rows: 150px 1fr 300px;
+  row-gap: 40px;
+}
+
+#intro {
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 2vh 2vw;
+}
+
+#description {
+  background-color: #ffffff;
+  padding: 2vh 2vw;
+  border-radius: 5px;
+}
+
+#description .subDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#how-to-apply {
+  background-image: url(../assets/desktop/bg-pattern-detail-footer.svg);
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  padding: 2vh 2vw;
+  color: #ffffff;
+}
+
+#how-to-apply a {
+  color: #ffffff;
+}
+
+#footer {
+  background-color: #ffffff;
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 27vw;
+}
 /*# sourceMappingURL=main.css.map */

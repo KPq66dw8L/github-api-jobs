@@ -348,3 +348,55 @@ body {
         color: $violet;
     }
 }
+
+/* Description Page */
+
+.descriAll {
+    padding: 0 15vw;
+    display: grid;
+    grid-template-rows: 150px 1fr 300px;
+    row-gap: 40px;
+}
+
+#intro {
+    background-color: $white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 2vh 2vw;
+}
+
+#description {
+    background-color: $white;
+    padding: 2vh 2vw;
+    border-radius: 5px;
+    .subDescription {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+#how-to-apply {
+    background-image: url(../assets/desktop/bg-pattern-detail-footer.svg);
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    padding: 2vh 2vw;
+    color: $white;
+    a {
+        color: $white;
+    }
+}
+
+#footer {
+    background-color: $white;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 27vw;
+}
