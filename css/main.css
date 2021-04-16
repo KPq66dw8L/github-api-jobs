@@ -382,6 +382,10 @@ body a {
   color: #ffffff;
 }
 
+#header h1 a {
+  color: #ffffff;
+}
+
 #header .darkSwitch {
   display: -webkit-box;
   display: -ms-flexbox;

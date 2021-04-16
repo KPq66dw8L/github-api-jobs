@@ -306,6 +306,9 @@ body {
     /* background-image: url(../assets/desktop/bg-pattern-header.svg); */
     h1 {
         color: $white;
+        a {
+            color: $white;
+        }
     }
     .darkSwitch {
         display: flex;
