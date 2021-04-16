@@ -43,7 +43,21 @@ $('a:first-child').click( function(e) {
   return false; 
 });
 
-function dark_theme() {
+/* function dark_theme() {
   document.body.classList.toggle("dark-mode");
-}
+} */
 
+
+const chk = document.getElementById('chk');
+
+chk.addEventListener('click', () => {
+  chk.checked?document.body.classList.add("dark-mode"):document.body.classList.remove("dark-mode");
+  localStorage.setItem('darkModeStatus', chk.checked);
+});
+
+window.addEventListener('load', (event) => {
+  if(localStorage.getItem('darkModeStatus')=="true"){
+    document.body.classList.add("dark-mode"); 
+    document.getElementById('chk').checked = true;
+  }
+});

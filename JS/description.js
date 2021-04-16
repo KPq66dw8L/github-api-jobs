@@ -14,6 +14,20 @@ console.log(lien);
 
 $("#footer").append("<div class='jobFooter'><h3>"+job.title+"</h3><p>"+job.company+"</p></div><div class='divBtn'><a class='btn btn-1' href='"+lien+"' rel='noopener noreferrer' target='_blank'>Apply Now</a></div>");
 
-function dark_theme() {
+/* function dark_theme() {
     document.body.classList.toggle("dark-mode");
-  }
+  } */
+
+const chk = document.getElementById('chk');
+
+chk.addEventListener('click', () => {
+  chk.checked?document.body.classList.add("dark-mode"):document.body.classList.remove("dark-mode");
+  localStorage.setItem('darkModeStatus', chk.checked);
+});
+
+window.addEventListener('load', (event) => {
+    if(localStorage.getItem('darkModeStatus')=="true"){
+      document.body.classList.add("dark-mode"); 
+      document.getElementById('chk').checked = true;
+    }
+  });

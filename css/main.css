@@ -28,6 +28,8 @@ html {
 }
 
 body {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   font-family: Kumbh-Sans , sans-serif;
   font-size: 16px;
   line-height: 26px;
@@ -61,60 +63,64 @@ body a {
   text-decoration: none;
 }
 
-.dark-mode {
+body.dark-mode {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background-color: #121721;
 }
 
-.dark-mode .search-container {
+body.dark-mode .search-container {
   background-color: #19202d;
 }
 
-.dark-mode .search-container input[type=text] {
+body.dark-mode .search-container input[type=text] {
   font-size: 17px;
   border: none;
   outline: none;
   background-color: #19202d;
   color: #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.dark-mode .search-checkbox {
+body.dark-mode .search-checkbox {
   color: #ffffff;
 }
 
-.dark-mode .element {
+body.dark-mode .element {
   background-color: #19202d;
 }
 
-.dark-mode .element h2 {
+body.dark-mode .element h2 {
   color: #ffffff;
 }
 
-.dark-mode .element .companyLogo {
+body.dark-mode .element .companyLogo {
   background-color: #6E8098;
   border: solid 5px #6E8098;
 }
 
-.dark-mode #intro {
+body.dark-mode #intro {
   background-color: #19202d;
   color: #ffffff;
 }
 
-.dark-mode #description {
+body.dark-mode #description {
   background-color: #19202d;
   color: #ffffff;
 }
 
-.dark-mode #footer {
+body.dark-mode #footer {
   background-color: #19202d;
   color: #ffffff;
 }
 
-.dark-mode .btn-2 {
+body.dark-mode .btn-2 {
   background-color: #6E8098;
   color: #ffffff;
 }
 
-.dark-mode .btn-2:hover {
+body.dark-mode .btn-2:hover {
   background-color: #9DaeC2;
 }
 
@@ -227,6 +233,8 @@ body a {
 
 /* Search bar */
 .search-container {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,6 +295,8 @@ body a {
   border: none;
   outline: none;
   width: 11vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .search-container img {
@@ -439,6 +449,8 @@ body a {
 }
 
 .element {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background-color: #ffffff;
   padding: 30px 30px;
   border-radius: 5px;
@@ -489,6 +501,8 @@ body a {
 }
 
 #intro {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background-color: #ffffff;
   border-radius: 5px;
   display: -webkit-box;
@@ -506,6 +520,8 @@ body a {
 }
 
 #description {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background-color: #ffffff;
   padding: 2vh 2vw;
   border-radius: 5px;
@@ -536,6 +552,8 @@ body a {
 }
 
 #footer {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background-color: #ffffff;
   margin-top: 80px;
   width: 100vw;
