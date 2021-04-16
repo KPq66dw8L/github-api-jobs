@@ -4,7 +4,8 @@ $('a:first-child').click( function(e) {
   let jobName = encodeURIComponent(document.getElementById('job-name').value);
   let locationName = encodeURIComponent(document.getElementById('location').value);
   console.log(encodeURIComponent(jobName), encodeURIComponent(locationName));
-
+  // Set the cursor ASAP to "Wait"
+  document.body.style.cursor='wait';
   var settings = {
     "url": "https://cors.bridged.cc/https://jobs.github.com/positions.json?description="+jobName+"&location="+locationName,
     "method": "GET",
@@ -17,7 +18,8 @@ $('a:first-child').click( function(e) {
     /* Fill result's elements */
     $(document).ready(function(){
       for(var i = 0; i< response.length; i++)
-        $("#results").append("<div class='element' id='"+i+"'><a href='description.html?id="+response[i].id+"' style='color:black;'><p>Xh ago . "+response[i].type+"</p><h2>"+response[i].title+"</h2><p>"+response[i].company+"</p><h4>Location</h4></a></div>");  
+        
+        $("#results").append("<div class='element' id='"+i+"'><img class='companyLogo' src='"+response[i].company_logo+"'><a href='description.html?id="+response[i].id+"' style='color:black;'><p>"+response[i].type+"</p><h2>"+response[i].title+"</h2><p>"+response[i].company+"</p><h4>"+response[i].location+"</h4></a></div>");  
       /* Event handler for job offer */
       $(document).ready(function() {
         $(".element").click(function() {
@@ -26,9 +28,14 @@ $('a:first-child').click( function(e) {
             sessionStorage.setItem('jobOffer', JSON.stringify(response[this.id]));
         });
       });
+      // When the window has finished loading, set it back to default...
+      document.body.style.cursor='default'
    });
    
   });
+  
+
+  
 
   return false; 
 });
