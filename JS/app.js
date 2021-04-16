@@ -1,5 +1,9 @@
 
 $('a:first-child').click( function(e) {
+  //remove previous search when new search loads
+  $("#results").empty();
+  document.getElementById("results").style.gridTemplateRows = "1fr";
+
   e.preventDefault(); 
   let jobName = encodeURIComponent(document.getElementById('job-name').value);
   let locationName = encodeURIComponent(document.getElementById('location').value);
