@@ -65,6 +65,52 @@ body {
     }
 }
 
+.dark-mode {
+    background-color: $midnight;
+    .search-container {
+        background-color: $veryDarkBlue;
+        input[type=text] {
+            font-size: 17px;
+            border: none;
+            outline: none;
+            background-color: $veryDarkBlue;
+            color: $white;
+        }
+    }
+    .search-checkbox {
+        color: $white;
+    }
+    .element {
+        background-color: $veryDarkBlue;
+        h2 {
+            color: $white;
+        }
+        .companyLogo {
+            background-color: $darkGrey;
+            border: solid 5px $darkGrey;
+        }
+    }
+    #intro {
+        background-color: $veryDarkBlue;
+        color: $white;
+    }
+    #description {
+        background-color: $veryDarkBlue;
+        color: $white;
+    }
+    #footer {
+        background-color: $veryDarkBlue;
+        color: $white;
+    }
+    .btn-2 {
+        background-color: $darkGrey;
+        color: $white;
+        &:hover {
+            background-color: $grey;
+    }
+    }
+}
+
 .all {
     padding-left: 12vw;
     padding-right: 12vw;
@@ -101,13 +147,6 @@ body {
     color: $violet;
     &:hover {
         background-color: #b6bcf5;
-    }
-}
-.btn-dark {
-    background-color: $veryDarkBlue;
-    color: $white;
-    &:hover {
-        background-color: $darkGrey;
     }
 }
 /* Toggle switch */
@@ -200,30 +239,7 @@ body {
         margin: 0 10px 0 0;
     }
 }
-/* .search-container-black {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: $veryDarkBlue;
-    width: 350px;
-    height: 75px;
-    border-radius: 10px;
-    input[type=text] {
-        font-size: 17px;
-        border: none;
-        outline: none;
-        background-color: $veryDarkBlue;
-        color: $white;
-    }
-    button {
-        margin: 0 5px 0 30px;
-        background: $veryDarkBlue;
-        font-size: 17px;
-        border: none;
-        cursor: pointer;
-        outline: none;
-    }
-} */
+
 /* Checkbox */
 .search-checkbox {
     margin-right: 1vw;

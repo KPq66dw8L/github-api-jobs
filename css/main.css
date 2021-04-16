@@ -61,6 +61,63 @@ body a {
   text-decoration: none;
 }
 
+.dark-mode {
+  background-color: #121721;
+}
+
+.dark-mode .search-container {
+  background-color: #19202d;
+}
+
+.dark-mode .search-container input[type=text] {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  background-color: #19202d;
+  color: #ffffff;
+}
+
+.dark-mode .search-checkbox {
+  color: #ffffff;
+}
+
+.dark-mode .element {
+  background-color: #19202d;
+}
+
+.dark-mode .element h2 {
+  color: #ffffff;
+}
+
+.dark-mode .element .companyLogo {
+  background-color: #6E8098;
+  border: solid 5px #6E8098;
+}
+
+.dark-mode #intro {
+  background-color: #19202d;
+  color: #ffffff;
+}
+
+.dark-mode #description {
+  background-color: #19202d;
+  color: #ffffff;
+}
+
+.dark-mode #footer {
+  background-color: #19202d;
+  color: #ffffff;
+}
+
+.dark-mode .btn-2 {
+  background-color: #6E8098;
+  color: #ffffff;
+}
+
+.dark-mode .btn-2:hover {
+  background-color: #9DaeC2;
+}
+
 .all {
   padding-left: 12vw;
   padding-right: 12vw;
@@ -108,15 +165,6 @@ body a {
 
 .btn-2:hover {
   background-color: #b6bcf5;
-}
-
-.btn-dark {
-  background-color: #19202d;
-  color: #ffffff;
-}
-
-.btn-dark:hover {
-  background-color: #6E8098;
 }
 
 /* Toggle switch */
@@ -245,30 +293,6 @@ body a {
   margin: 0 10px 0 0;
 }
 
-/* .search-container-black {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: $veryDarkBlue;
-    width: 350px;
-    height: 75px;
-    border-radius: 10px;
-    input[type=text] {
-        font-size: 17px;
-        border: none;
-        outline: none;
-        background-color: $veryDarkBlue;
-        color: $white;
-    }
-    button {
-        margin: 0 5px 0 30px;
-        background: $veryDarkBlue;
-        font-size: 17px;
-        border: none;
-        cursor: pointer;
-        outline: none;
-    }
-} */
 /* Checkbox */
 .search-checkbox {
   margin-right: 1vw;
