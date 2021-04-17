@@ -1,3 +1,8 @@
+//Initial search to fill the page with elements
+window.addEventListener('load', (event) => {
+  document.getElementById("startSearch").click();
+});
+
 //Search when pressing enter for job-name input
 // Get the input field
 var input = document.getElementById("job-name");
@@ -30,7 +35,7 @@ $('a:first-child').click( function(e) {
   let jobName = encodeURIComponent(document.getElementById('job-name').value);
   let locationName = encodeURIComponent(document.getElementById('location').value);
   console.log(encodeURIComponent(jobName), encodeURIComponent(locationName));
-  // Set the cursor ASAP to "Wait"
+  // Set the cursor ASAP to "Wait" -> 63
   document.body.style.cursor='wait';
   var settings = {
     "url": "https://cors.bridged.cc/https://jobs.github.com/positions.json?description="+jobName+"&location="+locationName,

@@ -571,8 +571,12 @@ body.dark-mode .btn-2:hover {
   padding: 0 27vw;
 }
 
+#footer h3 {
+  width: 500px;
+}
+
 #footer a {
-  margin-left: 19vw;
+  right: 0;
 }
 
 @media (max-width: 1200px) {
@@ -622,7 +626,7 @@ body.dark-mode .btn-2:hover {
   }
   #footer .divBtn {
     width: 80%;
-    margin-left: -10%;
+    margin-left: 10%;
   }
 }
 /*# sourceMappingURL=main.css.map */
