@@ -446,6 +446,8 @@ body.dark-mode .btn-2:hover {
   row-gap: 4vw;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .element {

@@ -1,3 +1,26 @@
+//Search when pressing enter for job-name input
+// Get the input field
+var input = document.getElementById("job-name");
+
+// Execute a function when the user releases a key on the keyboard
+input.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("startSearch").click();
+  }
+});
+//For the location input
+var input2 = document.getElementById("location");
+input2.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("startSearch").click();
+  }
+});
+
 
 $('a:first-child').click( function(e) {
   //remove previous search when new search loads
@@ -22,7 +45,7 @@ $('a:first-child').click( function(e) {
     $(document).ready(function(){
       for(var i = 0; i< response.length; i++)
         
-        $("#results").append("<div class='element' id='"+i+"'><img class='companyLogo' src='"+response[i].company_logo+"'><a href='description.html?id="+response[i].id+"' style='color:black;'><p>"+response[i].type+"</p><h2>"+response[i].title+"</h2><p>"+response[i].company+"</p><h4>"+response[i].location+"</h4></a></div>");  
+        $("#results").append("<div class='element' id='"+i+"' ><img class='companyLogo' src='"+response[i].company_logo+"'><a href='description.html?id="+response[i].id+"' style='color:black;'><p>"+response[i].type+"</p><h2>"+response[i].title+"</h2><p>"+response[i].company+"</p><h4>"+response[i].location+"</h4></a></div>");  
       /* Event handler for job offer */
       $(document).ready(function() {
         $(".element").click(function() {
@@ -31,15 +54,11 @@ $('a:first-child').click( function(e) {
             sessionStorage.setItem('jobOffer', JSON.stringify(response[this.id]));
         });
       });
-      // When the window has finished loading, set it back to default...
+      // When the search has finished loading, set cursor back to default...
       document.body.style.cursor='default'
    });
    
   });
-  
-
-  
-
   return false; 
 });
 
