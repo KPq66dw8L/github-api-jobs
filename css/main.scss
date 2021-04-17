@@ -114,6 +114,8 @@ body.dark-mode {
     }
 }
 
+
+
 .all {
     padding-left: 12vw;
     padding-right: 12vw;
@@ -445,7 +447,14 @@ body.dark-mode {
         right: 0;
     }
 }
-
+@media (min-width: 650px){
+    #mobileSearch {
+        display: none;
+    }
+    #filterMobile {
+        display: none;
+    }
+}
 @media (max-width: 1200px) {
     .results {
         grid-template-columns: repeat(2, 1fr);
@@ -469,10 +478,6 @@ body.dark-mode {
         grid-template-columns: 1fr;
         row-gap: 10vh;
     }
-    .all {
-        padding-left: 11vw;
-        padding-right: 5vw;
-    }
     .descriAll {
         padding: 0 0vw 0 0vw;
         grid-template-rows: 250px 1fr 300px;
@@ -491,4 +496,28 @@ body.dark-mode {
             margin-left:10%;
         }
     }
+    .search-job {
+        #job-name {
+           width: 40vw;
+       }
+    }
+    #search-location {
+        display: none;
+        img {
+            display: none;
+        }
+        #location {
+            display: none;
+        }
+    }
+    .search-checkbox {
+        display: none;
+    }
+    #filterMobile {
+        cursor: pointer;
+    }
+    #mobileSearch{
+        
+    }
+    
 }

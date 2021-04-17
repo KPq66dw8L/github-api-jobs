@@ -1,3 +1,7 @@
+document.getElementById("filterMobile").addEventListener("click", function(event) {
+  document.getElementById("mobileSearch").style.display = "visible";
+});
+
 //Initial search to fill the page with elements
 window.addEventListener('load', (event) => {
   document.getElementById("startSearch").click();
